@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTubers & Sponsors</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold mb-6">Connect YouTubers & Sponsors</h1>
+        <div id="youtuber-section" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">YouTubers</h2>
+            <form id="youtuber-form">
+                <input type="text" id="youtuber-name" placeholder="Your Name" class="border p-2 mb-2 w-full">
+                <input type="email" id="youtuber-email" placeholder="Your Email" class="border p-2 mb-2 w-full">
+                <input type="url" id="youtuber-channel" placeholder="Your Channel URL" class="border p-2 mb-4 w-full">
+                <button type="submit" class="bg-blue-500 text-white p-2 w-full">Submit</button>
+            </form>
+        </div>
+        <div id="sponsor-section" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Sponsors</h2>
+            <form id="sponsor-form">
+                <input type="text" id="sponsor-name" placeholder="Your Name" class="border p-2 mb-2 w-full">
+                <input type="email" id="sponsor-email" placeholder="Your Email" class="border p-2 mb-2 w-full">
+                <input type="text" id="sponsor-product" placeholder="Your Product" class="border p-2 mb-4 w-full">
+                <button type="submit" class="bg-green-500 text-white p-2 w-full">Submit</button>
+            </form>
+        </div>
+        <div id="matches-section">
+            <h2 class="text-2xl font-semibold mb-4">Matches</h2>
+            <div id="matches"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
